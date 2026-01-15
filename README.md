@@ -30,6 +30,10 @@ The application uses a centralized `pdf.service.ts` that handles:
 - **Multi-Report Support**: Export Invoices, Tour Reports, and Financial Summaries with a single click.
 
 ## 🛠️ Installation & Setup
+# Install dependencies
+npm install
+# Build & deploy to GitHub Pages
+npm run deploy
 1. Clone the repo: `git clone https://github.com/tripupcumilla/tuc-manager.git`
 2. Install dependencies: `npm install`
 3. Start development: `npm start`

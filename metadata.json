@@ -1,0 +1,7 @@
+{
+  "name": "TUC Manager - Pro",
+  "description": "A premium, owner-only tourism business management suite for Trip Up Cumilla (TUC). Handles tours, bookings, accounting, and PDF reporting.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

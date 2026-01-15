@@ -8,14 +8,16 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "lucide-react": "^0.562.0",
     "recharts": "^3.6.0",
-    "jspdf": "^4.0.0"
+    "jspdf": "^4.0.0",
+    "react-router-dom": "^6.17.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

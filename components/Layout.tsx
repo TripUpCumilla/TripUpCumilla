@@ -71,3 +71,28 @@ export const Layout: React.FC<LayoutProps> = ({ children, activeSection, setActi
     </div>
   );
 };
+
+
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <div style={{ padding: '24px', fontFamily: 'sans-serif' }}>
+      <h1>TripUp Cumilla Admin</h1>
+      <nav style={{ marginBottom: '16px' }}>
+        <Link to="/" style={{ marginRight: '12px' }}>Dashboard</Link>
+        <Link to="/tours" style={{ marginRight: '12px' }}>Tours</Link>
+        <Link to="/accounting">Accounting</Link>
+      </nav>
+      <hr />
+      {children}
+    </div>
+  );
+};
+
+export default Layout;

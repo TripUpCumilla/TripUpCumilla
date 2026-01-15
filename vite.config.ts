@@ -3,11 +3,10 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig(({ mode }) => {
-  // Load environment variables from .env files
   const env = loadEnv(mode, process.cwd(), '');
 
   return {
-    base: '/TripUpCumilla/',  // <-- Important for GitHub Pages
+    base: '/TripUpCumilla/',       // GitHub Pages base
     server: {
       port: 3000,
       host: '0.0.0.0',
@@ -19,7 +18,7 @@ export default defineConfig(({ mode }) => {
     },
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, 'src'), // src folder alias
+        '@': path.resolve(__dirname, 'src'),
       },
     },
   };

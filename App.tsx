@@ -56,3 +56,27 @@ const App: React.FC = () => {
 };
 
 export default App;
+
+
+import React from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './screens/Dashboard';
+import Tours from './screens/Tours';
+import Accounting from './screens/Accounting';
+
+const App: React.FC = () => {
+  return (
+    <HashRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/tours" element={<Tours />} />
+          <Route path="/accounting" element={<Accounting />} />
+        </Routes>
+      </Layout>
+    </HashRouter>
+  );
+};
+
+export default App;
